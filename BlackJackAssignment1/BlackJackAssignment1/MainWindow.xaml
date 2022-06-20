@@ -1,0 +1,44 @@
+﻿<Window x:Class="BlackJackAssignment1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BlackJackAssignment1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="675" Width="1025" ResizeMode="NoResize">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/img5.png"/>
+        </Grid.Background>
+        <!--<Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black"/>
+                <GradientStop Color="#FF0EB135" Offset="0.58"/>
+            </LinearGradientBrush>
+        </Grid.Background>-->
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <!--<WrapPanel>-->
+        <WrapPanel Grid.Column="0" Grid.Row="0" Name="DealerPanel" HorizontalAlignment="Center" Height="150" />
+        <!--</WrapPanel>-->
+        <WrapPanel Grid.Column="0" Grid.Row="1" Name="ScorePanel" HorizontalAlignment="Center"  >
+           
+        </WrapPanel>
+        <!--</WrapPanel>-->
+        <!--<WrapPanel>-->
+        <WrapPanel Grid.Column="0" Grid.Row="2" Name="PlayerPanel" HorizontalAlignment="Center" Height="150"/>
+        <!--</WrapPanel>-->
+        <WrapPanel Grid.Column="0" Grid.Row="3" Height="50" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="10">
+            <Button Name="StartButton" Content="Start" Width="75" Height="25" Click="Start" Margin="15 0" />
+            <Button Name="HitButton" Content="Hit" Width="75" Height="25" Click="Hit" Margin="15 0" IsEnabled="False"/>
+            <Button Name="StandButton" Content="Stand" Width="75" Height="25" Click="Stand" Margin="15 0" IsEnabled="False"/>
+            <Button Name="ResetButton" Content="Restart" Width="75" Height="25" Click="Reset" Margin="15 0" IsEnabled="False"/>
+        </WrapPanel>
+    </Grid>
+</Window>
