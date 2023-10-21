@@ -1,5 +1,7 @@
 # BlackJackWithGui
 
-A very simple terminal black jack game developed in Java
+A very simple WPF black jack game developed in C#
 
-PS: My first sem side project
+PS: My third sem project
+
+
